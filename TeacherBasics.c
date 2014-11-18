@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>													//String.h for <strcmp>
 
+const int MAX=2;
 
 void DataTypes();													//Declaration of function prototype 
 
@@ -73,8 +74,8 @@ void Modifiers()														//Function Definition
     else if(strcmp(ch,"unsigned")==0) printf("If we need to change the data type so that it can only store only store positive values, “unsigned” data modifier is used. \nFor example: unsigned int salary; \n"); 
     else if(strcmp(ch,"short")==0) printf("A “short” type modifier does just the opposite of “long”. If one is not expecting to see high range values in a program and the values are both positive & negative. \nFor example: short int age; \n"); 
     else if(strcmp(ch,"long")==0) printf("Sometimes while coding a program, we need to increase the Storage Capacity of a variable so that it can store values higher than its maximum limit which is there as default. In such situations or programs, we need to make use of the “long” data type qualifier. “long” type modifier doubles the “length” of the data type when used along with it. \nFor example: long int turnover; \n"); 
-    else if(strcmp(ch,"const")==0) printf("const sets the value of variable as constants. If the program tries to change the value of a constant variable, it displays an error. \nFor example: const int MAX=2; \n");
-    else { printf("Input either 'signed', 'unsigned', 'short', 'const' or 'long'. \n"); i=1;	}				//Repeating the input if an error 
+    else if(strcmp(ch,"const")==0) printf("const sets the value of variable as constants. If the program tries to change the value of a constant variable, it displays an error. \nFor example: const int MAX=2; (Has been declared in the beginning. \n"); 
+    else { printf("Input either 'signed', 'unsigned', 'short', 'const' or 'long'. \n"); i=1;}					//Repeating the input if an error 
   }while(i==1);
   
 }
